@@ -1,3 +1,3 @@
 MY RESUME 2020
 
-myresume.com
+https://jaromplewe.github.io/resume/
