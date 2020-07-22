@@ -1,18 +1,22 @@
 function companyDetails(detailsId) {
-    //center the div
-    document.getElementById(detailsId).style.marginLeft = "-200px";
+
+    //horizontally center the div
+    document.getElementById(detailsId).style.marginLeft = '-200px';
+
+    //vertically center the div
+
+    // // var halfWindowHeight = (window.innerHeight/2);
+    // var halfDetialsHeight = (document.getElementById(detailsId).height/2);
+    // document.getElementById(detailsId).style.marginTop = (halfWindowHeight - halfDetialsHeight);
+    
     //lower the div
     document.getElementById(detailsId).style.marginTop = 0;
+    
     //make the panel visible
     document.getElementById("company-panel").style.visibility = 'visible';
-    //make the div visible
-    document.getElementById("company-panel div").style.visibility = 'visible';
     
-    
-    //((window.innerHeight/2) - (20 + document.getElementById('enlarged_image').height/2)).toString() + "px";
-
-
-    //document.getElementById("executech-details"). = detailsId;
+    //make the details visible
+    document.getElementById(detailsId).style.visibility = 'visible';
 }
 
 function hideDetails() {
@@ -28,4 +32,7 @@ function hideDetails() {
 
     //Hide Weave
     document.getElementById("jacobsen-details").style.marginTop = "-400px";
+
+    //Hide Air Source
+    document.getElementById("airsource-details").style.marginTop = "-400px";
 }
